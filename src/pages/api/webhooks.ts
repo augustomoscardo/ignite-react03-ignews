@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+
 import { Readable } from 'stream'
 import Stripe from "stripe";
 import { stripe } from "../../services/stripe";
@@ -41,8 +42,7 @@ export default async (req: NextApiRequest ,res: NextApiResponse) => {
     const { type } = event;
 
     if (relevantEvents.has(type)) {
-      console.log('Evento recebido', event);
-      
+      console.log('Evento recebido', event); 
     }
     
     res.json({ received: true })  
