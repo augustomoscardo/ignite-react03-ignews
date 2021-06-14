@@ -70,7 +70,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             );
 
             break;
-        
           default:
             throw new Error('Unhandled event.');
         }
