@@ -57,7 +57,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths: [{ params: { slug: "gif-descubra-o-que-e-e-como-usar-o-formato" } }],
     fallback: true,
   };
 };
